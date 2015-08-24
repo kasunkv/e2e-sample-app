@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Contact Us</h1>
+        <p class="lead">Give us your feedback</p>
+
+        <div class="col-lg-6">
+            <div class="alert alert-dismissible alert-success" id="success-alert" ng-if="success">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Thank You!</strong> for giving us feedback. We will be in touch.
+            </div>
+
+            <form class="form-horizontal" name="feedbackForm">
+                <div class="form-group">
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" ng-model="feedback.name" id="name" placeholder="Your Name...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10">
+                        <input type="email" class="form-control" ng-model="feedback.email" id="email" placeholder="Email..">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10">
+                        <textarea class="form-control" rows="3" ng-model="feedback.message" id="message" placeholder="Your message here..."></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10">
+                        <button type="submit" class="btn btn-primary btn-lg" ng-click="sendFeedback()">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
